@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div>
+
+            <nav>
+                <ol>
+                    <li>
+
+                        <a href="">suma</a>
+                    </li>
+
+                    <li>
+                        <a href="">resta</a>
+                    </li>
+                    <li>
+                        <a href="">multiplicacion</a>
+                    </li>
+                    <li>
+                        <a href="">division</a>
+                    </li>
+                </ol>
+            </nav>
+
+        </div>
+
+        <section>
+            <h1>suma</h1>
+            <form action="suma">
+                <label for="sum1">ingrese numero 1</label>
+                <input type="number" placeholder="ingrese un numero" id="sum1">
+                <br>
+                <label for="sum2">ingrese numero 2</label>
+                <input type="number" placeholder="ingrese un numero" id="sum2">
+                <br>
+               <button onclick="suma()">sumar </button>
+            </form>
+            <script>
+                function suma() {
+                    var sum1 = parseFloat(document.getElementById("sum1").value);
+                    var sum2 = parseFloat(document.getElementById("sum2").value);
+                    var resultado;
+                    resultado = sum1 + sum2;
+                    alert("es la suma: "+ resultado);
+                }
+            </script>
+        </section>
+<br>
+
+        <section>
+            <h1>resta</h1>
+
+            <form action="resta">
+                <label for="sum1">ingrese numero 1 </label>
+                <input type="number"placeholder="ingrese un numero" id="sum1">
+                <br>
+                <label for="sum2">ingrese numero 2 </label>
+                <input type="number" placeholder="ingrese un numero" id="sum2">
+                <br>
+               <button onclick="resta()">restar </button>
+            </form>
+            <script>
+                function resta() {
+                    var sum1 = parseFloat(document.getElementById("sum1").value);
+                    var sum2 = parseFloat(document.getElementById("sum2").value);
+                    var resultado;
+                    resultado = sum1 - sum2;
+
+                    alert(" resta es : "- resultado);
+                }
+            </script>
+            </form>
+        </section>
+<br>
+
+        <section>
+            <h1>multiplicacion</h1>
+            <label for="sum1">ingrese numero 1</label>
+            <input type="number" placeholder="ingrese un numero" id="sum1">
+            <br>
+            <label for="sum2">ingrese numero 2</label>
+            <input type="number" placeholder="ingrese un numero" id="sum2">
+            <br>
+           <button onclick="multiplicacion()">multiplicar </button>
+
+        </form>
+        <script>
+            function multiplicacon() {
+                var sum1 = parseFloat(document.getElementById("sum1").value);
+                var sum2 = parseFloat(document.getElementById("sum2").value);
+                var resultado;
+                resultado = sum1 * sum2;
+
+                alert("la multiplicacion es: "+ resultado);
+            }
+        </script>
+        </section>
+<br>
+        <section>
+           <h1>division</h1>
+           <label for="sum1">ingrese numero 1</label>
+           <input type="number"placeholder="ingrese un numero" id="sum1">
+           <br>
+           <label for="sum2">ingrese numero 2</label>
+           <input type="number" placeholder="ingrese un numero" id="sum2">
+           <br>
+          <button onclick="division()">dividir </button>
+
+       </form>
+       <script>
+           function division() {
+               var sum1 = parseFloat(document.getElementById("sum1").value);
+               var sum2 = parseFloat(document.getElementById("sum2").value);
+               var resultado;
+               resultado = sum1 / sum2;
+
+               alert("la division es: "+ resultado);
+           }
+       </script>
+        </section>
+
+    </header>
+
+
+
+</body>
+
+</html>

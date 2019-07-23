@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="funciones.js"></script>
+    <script src="operaciones.js"></script>
+    <script>
+      //  casos();
+    </script>
+
+    <form action="">
+        <h2>1.-suma</h2>
+        primer numero
+        <input type="text" id=" ingrese primer numero"> <br> <br>
+        segundo numero
+        <input type="text" id="ingrese segundo numero"> <br> <br>
+        <input type="button" value="Seleccionar" onclick="suma()"><br><br>
+
+        <h2> 2.-factorial</h2>
+        ingrese numeroingrese numero
+        <input type="text" id="numero a ingresar"><br>
+        <input type="button" value="Seleccionar" onclick="factorial()"><br><br>
+
+        <h2> 3.-fechaActual</h2>
+        <input type="button" value="Seleccionar" onclick="fechaActual()"><br><br>
+
+        <h2 >4.-mostrar</h2>
+        <input type="text" id="mostar numero guardado"> <br> <br>
+        <input type="button" value="Seleccionar" onclick="mostrar()"><br><br>
+  
+        <h2>5.-mostrar1</h2>
+
+        Ingrese su nombre:
+        <input type="text" id="nombre"><br><br>
+        Ingrese su edad:
+        <input type="text" id="edad"><br> <br>
+        <input type="button" value="Seleccionar" onclick="mostrar1()">    
+
+
+
+    </form>
+    <script>
+        
+     var sueldo=new Array(2);
+    cargarSueldos(sueldo);
+    document.write(calcularGastos(sueldo));
+
+    
+    </script>
+
+    </form>
+</body>
+
+</html>
